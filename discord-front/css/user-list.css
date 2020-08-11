@@ -1,0 +1,77 @@
+/*START STYLE 
+ *
+ * UL - User List
+ *
+/*container-UL*/
+.container-user--list{
+    grid-area: UL;
+    display: flex;
+    flex-direction: column;
+    padding: 3px 6px 0 16px;
+    background-color: var(--secondary);
+    max-height: calc(100vh - 46px);
+    overflow-y: scroll;
+}
+
+.container-user--list::-webkit-scrollbar { 
+    width: 4px;
+}
+
+.container-user--list::-webkit-scrollbar-thumb { 
+    color: var(--tertiary);
+    border-radius: 4px;
+}
+
+.container-user--list::-webkit-scrollbar-track { 
+   background-color: var(--secondary);
+}  
+
+.container-user--list h3{
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--gray);
+}
+
+.container-user--list .user-row{
+    margin-top: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: transparent;
+    transition: background .2s;
+}
+
+.user-row:hover{
+    background-color: rgba(255,255,255,0.1);
+}
+
+.user-row > strong{
+    margin-left: 13px;
+    font-weight: 500;
+    color: var(--white);
+    opacity: 0.7;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.user-row span{
+    margin-left: 9px;
+    background-color: var(--discord);
+    color: var(--white);
+    border-radius: 4px;
+    padding: 4px 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.user-row .avatar{
+    width: 32px;
+    height: 32px;
+    background-color: var(--primary);
+    flex-shrink: 0;
+}

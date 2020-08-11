@@ -1,0 +1,109 @@
+/*START STYLE 
+ *
+ * CL -  Channel List
+ *
+ *container-CL*/
+
+.container-list{
+    grid-area: CL;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 9.5px 0 16px;
+    background-color: var(--secondary);
+}
+
+.container-list .categoria{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.categoria span{
+    text-transform: uppercase;
+    font-size: 12px;
+    color: var(--gray);
+}
+
+.btnmore{
+    width: 21px;
+    height: 21px;
+    background-color: var(--secondary);
+    color: var(--symbol);
+    font-size: 25px;
+    margin-top: -8px;
+    cursor: pointer;
+}
+
+.channelbutton{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 5px 3px;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: background-color .2s;
+}
+
+.channelbutton > div{
+    display: flex;
+    align-items: center;
+}
+
+.channelbutton > div span{
+    color: var(--senary);
+    margin-left: 5px;
+}
+
+.channelbutton:hover{
+    background-color: var(--quinary);
+
+}
+
+.channelbutton:active{
+    background-color: var(--quinary);
+}
+
+.channelbutton > div span:hover{
+    color: var(--white);
+}
+
+.channelbutton .hashtag{
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/icon.svg');
+    background-repeat: no-repeat;
+    color: var(--symbol); 
+}
+
+.iconboneco {
+    width: 16px;
+    height: 16px;
+}
+
+.config {
+    width: 16px;
+    height: 16px;
+}
+
+.iconboneco:hover{
+    width: 16px;
+    height: 16px;
+    background-image: url('../img/boneco.svg');
+    background-repeat: no-repeat;
+    cursor: pointer;
+    color: var(--symbol);
+    transition: color .2s;
+}
+
+.config:hover{
+    width: 16px;
+    height: 16px;
+    background-image: url('../img/config.svg');
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-left: 5px;
+    color: var(--symbol);
+    transition: color .2s;
+}
